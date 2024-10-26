@@ -1,4 +1,4 @@
-# Agenda de Contatos
+# Agenda de Contatos 📔
 
 Este projeto é uma aplicação de agenda de contatos construída em Python. Utiliza uma estrutura de classes para organizar contatos e gerenciar a conexão com um banco de dados, permitindo a fácil adaptação para diferentes bancos SQL (como SQLite, PostgreSQL, entre outros).
 
