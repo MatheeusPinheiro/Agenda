@@ -30,3 +30,9 @@ class Agenda:
         self.__conexao.cursor.execute(comando, (contato_id,))
         self.__conexao.conexao.commit()
         print(f'Contato de ID {contato_id}, removido com sucesso.')
+
+    def buscar_contato(self, nome_contato: str) -> None:
+        comando = f'SELECT * FROM tb_contatos WHERE NOME_CONTATO LIKE ?'
+        self.__conexao.cursor.execute(comando, (f'%{nome_contato}%',))
+        resultado = self.__conexao.cursor.fetchall()
+        return resultado
