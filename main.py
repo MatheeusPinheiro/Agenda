@@ -94,7 +94,7 @@ def main():
                 dados = agenda.buscar_contato(nome_contato)
 
                 if dados:
-                    #dados antigos
+                    #Id do contato
                     id_contato = dados[0][0]
                   
                     agenda.remover_contato(id_contato)
@@ -115,10 +115,6 @@ def main():
                 espera()
     
     
-
-
-
-
 
 if __name__ == '__main__':
     main()

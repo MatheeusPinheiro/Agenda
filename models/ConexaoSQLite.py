@@ -1,7 +1,7 @@
 import sqlite3
 from models.ConexaoDB import ConexaoDB
 
-class ConexaoSQLite():
+class ConexaoSQLite(ConexaoDB):
     def __init__(self, nome_banco):
         self.nome_banco = nome_banco
         self.conexao = None
